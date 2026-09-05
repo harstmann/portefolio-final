@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Jocelyn Hermann — Développeur Full Stack</title>
+<meta name="description" content="Portfolio de Jocelyn Hermann, Développeur Full Stack à Fianarantsoa, Madagascar. React, Node.js, Vue, Python, Django. Plus de 20 sites web livrés." />
+<meta name="author" content="Jocelyn Hermann" />
+
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Jocelyn Hermann — Développeur Full Stack" />
+<meta property="og:description" content="Développeur Full Stack à Fianarantsoa, Madagascar. React, Node.js, Vue, Python, Django. Plus de 20 sites web livrés." />
+<meta property="og:image" content="assets/img/profile.png" />
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22 font-family=%22sans-serif%22 font-weight=%22bold%22 fill=%22%232dd4bf%22>J</text></svg>" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+
+<link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+<a class="skip-link" href="#main">Aller au contenu</a>
+
+<div class="progress-bar" id="progressBar"></div>
+
+<header class="site-header" id="siteHeader">
+  <div class="container header-inner">
+    <a href="#accueil" class="brand">
+      <span class="brand-mark">JH</span>
+      <span class="brand-name">Jocelyn Hermann</span>
+    </a>
+
+    <nav class="main-nav" id="mainNav">
+      <a href="#accueil" class="nav-link">Accueil</a>
+      <a href="#apropos" class="nav-link">À propos</a>
+      <a href="#competences" class="nav-link">Compétences</a>
+      <a href="#experience" class="nav-link">Expérience</a>
+      <a href="#projets" class="nav-link">Projets</a>
+      <a href="#formation" class="nav-link">Formation</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </nav>
+
+    <div class="header-actions">
+      <button id="themeToggle" class="icon-btn" type="button" aria-label="Changer de thème" title="Changer de thème">
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79Z"/></svg>
+      </button>
+      <button id="navToggle" class="nav-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mainNav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- HERO -->
+  <section id="accueil" class="hero">
+    <div class="container hero-inner">
+      <div class="hero-text reveal">
+        <p class="eyebrow"><span class="eyebrow-ping"></span> Disponible pour de nouvelles missions</p>
+        <h1>Jocelyn <span class="text-gradient">Hermann</span></h1>
+        <p class="hero-role">
+          Développeur <span class="typed" id="typedRole">Full Stack</span><span class="cursor">|</span>
+        </p>
+        <p class="hero-desc">
+          Basé à Fianarantsoa, Madagascar 🇲🇬 — je conçois et développe des applications web et mobiles
+          modernes, du prototype à la mise en production. Plus de 20 sites web livrés et une expertise
+          en systèmes intelligents (RAG, messagerie, logistique). Également créateur de contenu et
+          cofondateur d'un studio de production musicale — le code n'est qu'une de mes cordes à l'arc.
+        </p>
+        <div class="hero-cta">
+          <a href="#contact" class="btn btn-primary group">
+            Me contacter
+            <svg class="btn-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+          <a href="assets/CV-Jocelyn-Hermann.pdf" class="btn btn-ghost" download>Télécharger le CV</a>
+        </div>
+        <ul class="hero-socials">
+          <li><a href="https://github.com/harstmann" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.73.5.98 5.24.98 11.52c0 4.96 3.22 9.17 7.68 10.66.56.1.76-.24.76-.54 0-.27-.01-1.15-.02-2.09-3.13.68-3.79-1.34-3.79-1.34-.51-1.3-1.25-1.65-1.25-1.65-1.02-.7.08-.69.08-.69 1.13.08 1.72 1.16 1.72 1.16 1 1.72 2.63 1.22 3.27.93.1-.73.39-1.22.71-1.5-2.5-.28-5.13-1.25-5.13-5.56 0-1.23.44-2.23 1.16-3.02-.12-.28-.5-1.43.11-2.98 0 0 .95-.3 3.11 1.16a10.8 10.8 0 0 1 5.66 0c2.16-1.46 3.11-1.16 3.11-1.16.61 1.55.23 2.7.11 2.98.72.79 1.16 1.79 1.16 3.02 0 4.32-2.64 5.28-5.15 5.55.4.35.76 1.04.76 2.1 0 1.51-.01 2.73-.01 3.1 0 .3.2.65.77.54A11.03 11.03 0 0 0 23.02 11.5C23.02 5.24 18.27.5 12 .5Z"/></svg>
+          </a></li>
+          <li><a href="https://www.facebook.com/profile.php?id=100083929216919" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.5 1.49-3.89 3.78-3.89 1.1 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.9h-2.34V22c4.78-.8 8.44-4.95 8.44-9.94Z"/></svg>
+          </a></li>
+          <li><a href="https://www.youtube.com/@harstmann-jh?sub_confirmation=1" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.19a3.02 3.02 0 0 0-2.12-2.14C19.51 3.5 12 3.5 12 3.5s-7.51 0-9.38.55A3.02 3.02 0 0 0 .5 6.19 31.6 31.6 0 0 0 0 12a31.6 31.6 0 0 0 .5 5.81 3.02 3.02 0 0 0 2.12 2.14c1.87.55 9.38.55 9.38.55s7.51 0 9.38-.55a3.02 3.02 0 0 0 2.12-2.14A31.6 31.6 0 0 0 24 12a31.6 31.6 0 0 0-.5-5.81ZM9.6 15.6V8.4l6.27 3.6-6.27 3.6Z"/></svg>
+          </a></li>
+          <li><a href="mailto:harstmannjh@gmail.com" aria-label="Email">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg>
+          </a></li>
+        </ul>
+      </div>
+
+      <div class="hero-media reveal">
+        <div class="hero-photo-wrap">
+          <img src="assets/img/profile.png" alt="Photo de Jocelyn Hermann" class="hero-photo" />
+        </div>
+        <div class="floating-card card-top">
+          <span class="dot"></span> 20+ sites web livrés
+        </div>
+      </div>
+    </div>
+    <a href="#apropos" class="scroll-cue" aria-label="Défiler vers le bas">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M19 12l-7 7-7-7"/></svg>
+    </a>
+  </section>
+
+  <!-- APROPOS -->
+  <section id="apropos" class="section">
+    <div class="container">
+      <p class="section-tag reveal">À propos</p>
+      <h2 class="section-title reveal">Qui suis-je ?</h2>
+
+      <div class="about-grid">
+        <p class="about-text reveal">
+          Développeur Full Stack passionné, avec une solide formation en informatique et une expertise
+          dans le développement moderne des technologies frontend et backend. Depuis 2025, je travaille
+          chez <strong>TechZone IT Solutions</strong> où j'ai conçu plus de 20 sites web — dont
+          <strong>fretunia.com</strong> et <strong>techzone.lat</strong> — une plateforme de gestion de
+          colis entre la Chine et Madagascar, ainsi qu'un système RAG (Retrieval-Augmented Generation)
+          pour la messagerie intelligente. En parallèle, je gère la communication digitale de l'entreprise
+          (community management, création de contenu vidéo) et je suis cofondateur du
+          <strong>Studio Fatakana Record (KJ Studio)</strong>, un studio de production musicale actif à
+          Fianarantsoa depuis 2019. Curieux et rigoureux, j'aime transformer des besoins concrets — qu'ils
+          soient techniques, créatifs ou éditoriaux — en résultats fiables et soignés.
+        </p>
+
+        <div class="stats-grid reveal">
+          <div class="stat-card">
+            <span class="stat-num" data-count="20">0</span><span class="stat-plus">+</span>
+            <span class="stat-label">Sites web livrés</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num" data-count="5">0</span>
+            <span class="stat-label">Expériences pro</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num" data-count="3">0</span>
+            <span class="stat-label">Langues parlées</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num" data-count="2">0</span>
+            <span class="stat-label">Diplômes ENI</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="info-strip reveal">
+        <div class="info-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0 1 18 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+          <span>Andrainjato, Fianarantsoa — Madagascar</span>
+        </div>
+        <div class="info-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg>
+          <span>harstmannjh@gmail.com</span>
+        </div>
+        <div class="info-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 21v-13a2 2 0 0 1 2-2h5l2 2h5a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H4Z"/></svg>
+          <span>Malgache · Français · Anglais</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMPETENCES -->
+  <section id="competences" class="section section-alt">
+    <div class="container">
+      <p class="section-tag reveal">Compétences</p>
+      <h2 class="section-title reveal">Ma boîte à outils</h2>
+
+      <div class="skills-grid">
+        <div class="skill-card reveal">
+          <div class="skill-icon">💻</div>
+          <h3>Technologies web</h3>
+          <div class="tag-list">
+            <span class="tag">JavaScript</span><span class="tag">PHP</span><span class="tag">Python</span>
+            <span class="tag">HTML5</span><span class="tag">CSS3</span>
+          </div>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-icon">🧩</div>
+          <h3>Frameworks &amp; librairies</h3>
+          <div class="tag-list">
+            <span class="tag">React.js</span><span class="tag">Next.js</span><span class="tag">Vue.js</span>
+            <span class="tag">Node.js</span><span class="tag">Express.js</span><span class="tag">Django</span>
+            <span class="tag">Tailwind CSS</span><span class="tag">Bootstrap</span>
+          </div>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-icon">🗄️</div>
+          <h3>Bases de données</h3>
+          <div class="tag-list">
+            <span class="tag">MySQL</span><span class="tag">PostgreSQL</span>
+          </div>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-icon">🧰</div>
+          <h3>Outils tech &amp; dev</h3>
+          <div class="tag-list">
+            <span class="tag">VS Code</span><span class="tag">GitHub</span><span class="tag">WordPress</span>
+            <span class="tag">Webflow</span><span class="tag">Figma</span>
+          </div>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-icon">📱</div>
+          <h3>Développement mobile</h3>
+          <div class="tag-list">
+            <span class="tag">Java</span><span class="tag">React Native</span><span class="tag">Flutter</span>
+          </div>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-icon">🧭</div>
+          <h3>Méthodes &amp; modélisation</h3>
+          <div class="tag-list">
+            <span class="tag">Agile</span><span class="tag">2TUP</span><span class="tag">Merise</span>
+            <span class="tag">UML</span>
+          </div>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-icon">🎬</div>
+          <h3>Design &amp; vidéo</h3>
+          <div class="tag-list">
+            <span class="tag">Canva</span><span class="tag">Photoshop</span><span class="tag">CapCut</span>
+            <span class="tag">Premiere Pro</span>
+          </div>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-icon">📣</div>
+          <h3>Marketing &amp; réseaux sociaux</h3>
+          <div class="tag-list">
+            <span class="tag">Community management</span><span class="tag">SEO</span>
+            <span class="tag">Copywriting</span><span class="tag">Meta Business Suite</span>
+          </div>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-icon">🤖</div>
+          <h3>Productivité &amp; IA</h3>
+          <div class="tag-list">
+            <span class="tag">ChatGPT</span><span class="tag">Notion</span><span class="tag">Google Sheets</span>
+            <span class="tag">Automatisation</span>
+          </div>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-icon">🎧</div>
+          <h3>Audio &amp; production musicale</h3>
+          <div class="tag-list">
+            <span class="tag">FL Studio</span><span class="tag">Audacity</span>
+          </div>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-icon">🛠️</div>
+          <h3>Outils &amp; systèmes</h3>
+          <div class="tag-list">
+            <span class="tag">Windows</span><span class="tag">Linux</span><span class="tag">Word</span>
+            <span class="tag">Excel</span><span class="tag">PowerPoint</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="skill-bars reveal">
+        <h3 class="skill-bars-title">Niveaux de maîtrise</h3>
+        <div class="skill-bar-item">
+          <div class="skill-bar-label"><span>Développement web</span><span>10/10</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-width="100"></div></div>
+        </div>
+        <div class="skill-bar-item">
+          <div class="skill-bar-label"><span>Création de site web</span><span>10/10</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-width="100"></div></div>
+        </div>
+        <div class="skill-bar-item">
+          <div class="skill-bar-label"><span>Audio / Musique</span><span>10/10</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-width="100"></div></div>
+        </div>
+        <div class="skill-bar-item">
+          <div class="skill-bar-label"><span>Automatisation / IA</span><span>9/10</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-width="90"></div></div>
+        </div>
+        <div class="skill-bar-item">
+          <div class="skill-bar-label"><span>Community management</span><span>8/10</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-width="80"></div></div>
+        </div>
+        <div class="skill-bar-item">
+          <div class="skill-bar-label"><span>Montage vidéo</span><span>7/10</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-width="70"></div></div>
+        </div>
+        <div class="skill-bar-item">
+          <div class="skill-bar-label"><span>Assistance virtuelle</span><span>7/10</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-width="70"></div></div>
+        </div>
+        <div class="skill-bar-item">
+          <div class="skill-bar-label"><span>Copywriting</span><span>6/10</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-width="60"></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="section">
+    <div class="container">
+      <p class="section-tag reveal">Parcours</p>
+      <h2 class="section-title reveal">Expérience professionnelle</h2>
+
+      <div class="timeline">
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">2025 — Présent</span>
+            <h3>Développeur Full Stack</h3>
+            <p class="timeline-org">TechZone IT Solutions</p>
+            <ul>
+              <li>Développement de plus de 20 sites web, dont <strong>fretunia.com</strong>, améliorant la visibilité en ligne des clients.</li>
+              <li>Création d'une plateforme de gestion de colis entre la Chine et Madagascar, optimisant la logistique.</li>
+              <li>Mise en place d'un système RAG pour les conversations et la messagerie, augmentant l'efficacité du support.</li>
+              <li>Conception et livraison de plus de 20 sites vitrines pour des clients variés.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">2025 — 2026</span>
+            <h3>Community Manager</h3>
+            <p class="timeline-org">TechZone IT Solutions · Freelance</p>
+            <ul>
+              <li>Gestion et animation des réseaux sociaux de l'entreprise (Facebook).</li>
+              <li>Création de contenus visuels et rédactionnels pour promouvoir les services et projets, avec un calendrier éditorial planifié.</li>
+              <li>Interaction avec la communauté (réponses, commentaires, modération) et suivi des statistiques d'engagement.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">2019 — Présent</span>
+            <h3>Cofondateur &amp; Producteur</h3>
+            <p class="timeline-org">Studio Fatakana Record (KJ Studio)</p>
+            <ul>
+              <li>Cofondation et lancement du studio : administration, organisation et coordination des activités.</li>
+              <li>Production et supervision des projets réalisés au sein du studio, développement de la clientèle et des partenariats.</li>
+              <li>Studio actif depuis plus de 5 ans, avec une clientèle fidèle et une notoriété locale à Fianarantsoa — producteur de plusieurs artistes locaux, dont le titre <strong>« Diso 2026 »</strong> (Kenn Jah x Gaza Samy).</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">2024 · 3 mois</span>
+            <h3>Stagiaire Développeur</h3>
+            <p class="timeline-org">Super Music Fianarantsoa</p>
+            <ul>
+              <li>Développement d'un site e-commerce pour la vente de matériel informatique, facilitant les ventes en ligne.</li>
+              <li>Collaboration avec l'équipe pour améliorer l'expérience utilisateur et l'interface.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">2024 · 3 mois</span>
+            <h3>Développeur</h3>
+            <p class="timeline-org">Impexy Toamasina</p>
+            <ul>
+              <li>Développement d'un site pour la gestion de points de caisse (cache points).</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJETS -->
+  <section id="projets" class="section section-alt">
+    <div class="container">
+      <p class="section-tag reveal">Réalisations</p>
+      <h2 class="section-title reveal">Projets sélectionnés</h2>
+      <p class="section-sub reveal">
+        Du développement web à la création de contenu et à la production musicale — un aperçu de mes
+        casquettes.
+      </p>
+
+      <div class="project-filters reveal">
+        <button class="filter-btn active" data-filter="all" type="button">Tous</button>
+        <button class="filter-btn" data-filter="dev" type="button">Développement</button>
+        <button class="filter-btn" data-filter="content" type="button">Contenu &amp; vidéo</button>
+        <button class="filter-btn" data-filter="marketing" type="button">Marketing &amp; réseaux</button>
+        <button class="filter-btn" data-filter="audio" type="button">Musique &amp; audio</button>
+      </div>
+
+      <div class="projects-grid" id="projectsGrid">
+
+        <article class="project-card reveal" data-cat="dev">
+          <div class="project-top">
+            <span class="project-emoji">📦</span>
+            <span class="project-badge">Logistique</span>
+          </div>
+          <h3>Plateforme de gestion de colis</h3>
+          <p>Gestion logistique de colis entre la Chine et Madagascar : suivi, statuts et optimisation des flux — conçue chez TechZone IT Solutions.</p>
+          <div class="tag-list">
+            <span class="tag">React</span><span class="tag">Node.js</span><span class="tag">PostgreSQL</span>
+          </div>
+        </article>
+
+        <article class="project-card reveal" data-cat="dev">
+          <div class="project-top">
+            <span class="project-emoji">🤖</span>
+            <span class="project-badge">Intelligence artificielle</span>
+          </div>
+          <h3>Système RAG — Messagerie intelligente</h3>
+          <p>Mise en place d'un pipeline de Retrieval-Augmented Generation pour fiabiliser les conversations et la messagerie automatisée.</p>
+          <div class="tag-list">
+            <span class="tag">Python</span><span class="tag">RAG</span><span class="tag">API</span>
+          </div>
+          <a href="https://github.com/harstmann/RAG-Techzone" target="_blank" rel="noopener noreferrer" class="project-link">
+            Voir sur GitHub
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M7 7h10v10"/></svg>
+          </a>
+        </article>
+
+        <article class="project-card reveal" data-cat="dev">
+          <div class="project-top">
+            <span class="project-emoji">🌐</span>
+            <span class="project-badge">Site vitrine</span>
+          </div>
+          <h3>Fretunia</h3>
+          <p>Logiciel SaaS de gestion de colis et de logistique pour les agences de fret opérant sur le corridor Chine-Afrique (Madagascar, Algérie, Côte d'Ivoire...).</p>
+          <div class="tag-list">
+            <span class="tag">HTML/CSS</span><span class="tag">JavaScript</span>
+          </div>
+          <a href="https://fretunia.com" target="_blank" rel="noopener noreferrer" class="project-link">
+            Visiter le site
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M7 7h10v10"/></svg>
+          </a>
+        </article>
+
+        <article class="project-card reveal" data-cat="dev">
+          <div class="project-top">
+            <span class="project-emoji">🏢</span>
+            <span class="project-badge">Site vitrine</span>
+          </div>
+          <h3>TechZone IT Solutions</h3>
+          <p>Vitrine digitale officielle de TechZone IT Solutions, entreprise de services technologiques et numériques basée à Fianarantsoa, Madagascar.</p>
+          <div class="tag-list">
+            <span class="tag">React</span><span class="tag">Node.js</span>
+          </div>
+          <a href="https://techzone.lat" target="_blank" rel="noopener noreferrer" class="project-link">
+            Visiter le site
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M7 7h10v10"/></svg>
+          </a>
+        </article>
+
+        <article class="project-card reveal" data-cat="dev">
+          <div class="project-top">
+            <span class="project-emoji">🛒</span>
+            <span class="project-badge">E-commerce</span>
+          </div>
+          <h3>Super Music — Vente en ligne</h3>
+          <p>Site e-commerce pour la vente de matériel informatique, développé en stage pour faciliter les ventes en ligne.</p>
+          <div class="tag-list">
+            <span class="tag">E-commerce</span><span class="tag">UI/UX</span>
+          </div>
+        </article>
+
+        <article class="project-card reveal" data-cat="dev">
+          <div class="project-top">
+            <span class="project-emoji">🏦</span>
+            <span class="project-badge">Gestion</span>
+          </div>
+          <h3>Impexy — Points de caisse</h3>
+          <p>Application de gestion des points de caisse (cache points) pour Impexy Toamasina.</p>
+          <div class="tag-list">
+            <span class="tag">Merise</span><span class="tag">UML</span>
+          </div>
+        </article>
+
+        <article class="project-card reveal" data-cat="dev">
+          <div class="project-top">
+            <span class="project-emoji">📁</span>
+            <span class="project-badge">Portfolio</span>
+          </div>
+          <h3>+20 sites vitrines</h3>
+          <p>Conception et développement de plus de vingt sites vitrines pour des clients aux besoins variés, du cahier des charges à la mise en ligne.</p>
+          <div class="tag-list">
+            <span class="tag">React</span><span class="tag">WordPress</span><span class="tag">SEO</span>
+          </div>
+          <a href="https://github.com/harstmann" target="_blank" rel="noopener noreferrer" class="project-link">
+            Voir le GitHub
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M7 7h10v10"/></svg>
+          </a>
+        </article>
+
+        <article class="project-card reveal" data-cat="content">
+          <div class="project-top">
+            <span class="project-emoji">🎥</span>
+            <span class="project-badge">Vidéo</span>
+          </div>
+          <h3>Comparatif IA de code</h3>
+          <p>Vidéo YouTube comparant 3 IA de génération de code (Claude, Blink, Z.ai) testées avec un prompt identique, pour évaluer leur capacité à produire du code propre et créer une API rapidement.</p>
+          <div class="tag-list">
+            <span class="tag">Création de contenu</span><span class="tag">Montage</span><span class="tag">Test tech</span>
+          </div>
+          <a href="https://www.youtube.com/@harstmann-jh" target="_blank" rel="noopener noreferrer" class="project-link">
+            Voir la chaîne
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M7 7h10v10"/></svg>
+          </a>
+        </article>
+
+        <article class="project-card reveal" data-cat="content">
+          <div class="project-top">
+            <span class="project-emoji">🎓</span>
+            <span class="project-badge">Formation</span>
+          </div>
+          <h3>JH Techlab — Microsoft Copilot</h3>
+          <p>Première formation officielle de la chaîne JH Techlab, dédiée à Microsoft Copilot : tutoriel pas-à-pas pour automatiser les tâches et optimiser son flux de travail avec l'IA.</p>
+          <div class="tag-list">
+            <span class="tag">Formateur</span><span class="tag">Montage vidéo</span><span class="tag">IA</span>
+          </div>
+          <a href="https://www.youtube.com/@harstmann-jh" target="_blank" rel="noopener noreferrer" class="project-link">
+            Voir la chaîne
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M7 7h10v10"/></svg>
+          </a>
+        </article>
+
+        <article class="project-card reveal" data-cat="marketing">
+          <div class="project-top">
+            <span class="project-emoji">🛍️</span>
+            <span class="project-badge">Réseaux sociaux</span>
+          </div>
+          <h3>Jh Digitale Market</h3>
+          <p>Boutique en ligne (page Facebook professionnelle) dédiée à la vente d'accessoires tech — écouteurs, casques, accessoires du quotidien. Identité visuelle, contenu et gestion client entièrement pris en charge.</p>
+          <div class="tag-list">
+            <span class="tag">Fondateur</span><span class="tag">Community management</span><span class="tag">Meta Business Suite</span>
+          </div>
+        </article>
+
+        <article class="project-card reveal" data-cat="audio">
+          <div class="project-top">
+            <span class="project-emoji">🎵</span>
+            <span class="project-badge">Production musicale</span>
+          </div>
+          <h3>« Diso 2026 » — Kenn Jah x Gaza Samy</h3>
+          <p>Production, réalisation et enregistrement du titre au sein du Studio Fatakana Record (KJ Studio), beat produit par Carlash On The Beats. Sortie officielle sur la chaîne YouTube Kenn Jah.</p>
+          <div class="tag-list">
+            <span class="tag">FL Studio</span><span class="tag">Production</span><span class="tag">Studio</span>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FORMATION -->
+  <section id="formation" class="section">
+    <div class="container">
+      <p class="section-tag reveal">Formation</p>
+      <h2 class="section-title reveal">Éducation &amp; diplômes</h2>
+
+      <div class="timeline">
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">2026 (en cours)</span>
+            <h3>Master 2 en Informatique</h3>
+            <p class="timeline-org">ENI — École Nationale d'Informatique · Informatique Générale</p>
+          </div>
+        </div>
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">2024</span>
+            <h3>Licence en Informatique</h3>
+            <p class="timeline-org">ENI — École Nationale d'Informatique · Informatique Générale</p>
+          </div>
+        </div>
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">2019 — 2021</span>
+            <h3>EA2I — Électronique, Applications et Informatique Industriel</h3>
+            <p class="timeline-org">Faculté de Science, Fianarantsoa</p>
+          </div>
+        </div>
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">2018</span>
+            <h3>Baccalauréat, Série D</h3>
+            <p class="timeline-org">Lycée Privée Les Semeurs</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section section-alt">
+    <div class="container">
+      <p class="section-tag reveal">Contact</p>
+      <h2 class="section-title reveal">Discutons de votre projet</h2>
+      <p class="section-sub reveal">
+        Une idée de site, une application à développer ou une mission freelance ?
+        Je réponds sous 24 à 48h.
+      </p>
+
+      <div class="contact-grid">
+        <div class="contact-cards reveal">
+          <a class="contact-card" href="mailto:harstmannjh@gmail.com">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg>
+            <div>
+              <span class="contact-label">Email</span>
+              <span class="contact-value">harstmannjh@gmail.com</span>
+            </div>
+          </a>
+          <a class="contact-card" href="https://github.com/harstmann" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.73.5.98 5.24.98 11.52c0 4.96 3.22 9.17 7.68 10.66.56.1.76-.24.76-.54 0-.27-.01-1.15-.02-2.09-3.13.68-3.79-1.34-3.79-1.34-.51-1.3-1.25-1.65-1.25-1.65-1.02-.7.08-.69.08-.69 1.13.08 1.72 1.16 1.72 1.16 1 1.72 2.63 1.22 3.27.93.1-.73.39-1.22.71-1.5-2.5-.28-5.13-1.25-5.13-5.56 0-1.23.44-2.23 1.16-3.02-.12-.28-.5-1.43.11-2.98 0 0 .95-.3 3.11 1.16a10.8 10.8 0 0 1 5.66 0c2.16-1.46 3.11-1.16 3.11-1.16.61 1.55.23 2.7.11 2.98.72.79 1.16 1.79 1.16 3.02 0 4.32-2.64 5.28-5.15 5.55.4.35.76 1.04.76 2.1 0 1.51-.01 2.73-.01 3.1 0 .3.2.65.77.54A11.03 11.03 0 0 0 23.02 11.5C23.02 5.24 18.27.5 12 .5Z"/></svg>
+            <div>
+              <span class="contact-label">GitHub</span>
+              <span class="contact-value">github.com/harstmann</span>
+            </div>
+          </a>
+          <a class="contact-card" href="https://freels.io/jh-tech" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+            <div>
+              <span class="contact-label">Freelance</span>
+              <span class="contact-value">Profil Freels.io</span>
+            </div>
+          </a>
+          <div class="contact-card contact-card-static">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0 1 18 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+            <div>
+              <span class="contact-label">Localisation</span>
+              <span class="contact-value">Fianarantsoa, Madagascar</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p>© <span id="year"></span> Jocelyn Hermann. Tous droits réservés.</p>
+    <p class="footer-made">Conçu &amp; codé avec ❤️ à Fianarantsoa, Madagascar.</p>
+  </div>
+</footer>
+
+<button id="backToTop" class="back-to-top" aria-label="Retour en haut">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</button>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
