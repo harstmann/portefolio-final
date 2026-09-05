@@ -178,7 +178,7 @@
   /* ---------- Typed role rotator ---------- */
   var typedEl = document.getElementById("typedRole");
   if (typedEl) {
-    var roles = ["Full Stack", "Créateur de Contenu", "Frontend React", "Producteur Musical", "IA & RAG"];
+    var roles = ["Full Stack", "Créateur de Contenu", "Assistant Virtuel", "Producteur Musical", "IA & RAG"];
     var roleIndex = 0;
     var charIndex = roles[0].length;
     var deleting = false;
